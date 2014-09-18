@@ -1,4 +1,4 @@
-package info.bluefloyd.callstack.composer.tests.common;
+package info.bluefloyd.tracer.tests;
 
 import org.junit.Test;
 

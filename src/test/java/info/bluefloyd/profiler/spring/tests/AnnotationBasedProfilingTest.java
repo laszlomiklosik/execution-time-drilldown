@@ -1,4 +1,4 @@
-package info.bluefloyd.callstack.composer.tests.spring;
+package info.bluefloyd.profiler.spring.tests;
 
 /**
  * Created by laci on 9/18/2014.

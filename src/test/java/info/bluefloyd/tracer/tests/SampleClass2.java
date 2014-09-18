@@ -1,4 +1,4 @@
-package info.bluefloyd.callstack.composer.tests.common;
+package info.bluefloyd.tracer.tests;
 
 /**
  * Created by laci on 9/18/2014.

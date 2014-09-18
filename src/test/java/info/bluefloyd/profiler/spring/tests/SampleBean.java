@@ -1,4 +1,4 @@
-package info.bluefloyd.callstack.composer.tests.spring;
+package info.bluefloyd.profiler.spring.tests;
 
 import info.bluefloyd.profiler.ProfileExecution;
 import org.apache.commons.logging.Log;
