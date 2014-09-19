@@ -7,7 +7,7 @@ public class CallTraceElement {
     private final String className;
     private final String methodName;
     private final long duration;
-    // TODO: additional fields like e.g. effective method arguments
+    // TODO: additional fields like e.g. effective method arguments, line number
 
     public CallTraceElement(String className, String methodName, long duration) {
         this.className = className;
