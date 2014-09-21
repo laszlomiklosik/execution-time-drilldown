@@ -1,5 +1,8 @@
 package info.bluefloyd.tracer;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -10,11 +13,10 @@ import java.util.Set;
  */
 public class CallTraceComposer {
 
-
-    public void getCallStack() {
+    public List<CallTraceElement> getCallTrace() {
         StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
         List<CallTraceElement> callTraceElements = new ArrayList<CallTraceElement>();
-        for(StackTraceElement stackTraceElement : stackTraceElements){
+        for (StackTraceElement stackTraceElement : stackTraceElements) {
             String calledClassName = stackTraceElement.getClassName();
             String calledMethodName = stackTraceElement.getMethodName();
             if (!isIgnoredMethod(calledClassName, calledMethodName)) {
@@ -23,7 +25,7 @@ public class CallTraceComposer {
                 callTraceElements.add(callTraceElement);
             }
         }
-        System.out.println(callTraceElements);
+        return callTraceElements;
     }
 
     private boolean isIgnoredMethod(String className, String methodName) {

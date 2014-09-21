@@ -1,4 +1,4 @@
-package info.bluefloyd.profiler.spring.tests;
+package info.bluefloyd.profiler.test.spring;
 
 import info.bluefloyd.profiler.ProfileExecution;
 import info.bluefloyd.profiler.ProfilingMethodInterceptor;

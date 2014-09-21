@@ -1,4 +1,4 @@
-package info.bluefloyd.profiler.spring.tests;
+package info.bluefloyd.profiler.test.spring;
 
 /**
  * Created by laci on 9/18/2014.
@@ -19,7 +19,8 @@ public class AnnotationBasedProfilingTest {
 
     @Test
     public void testProfiling() {
-        sampleBean.sampleMethod();
+        for (int i = 0; i < 50; i++) {
+            sampleBean.sampleMethod();
+        }
     }
-
 }

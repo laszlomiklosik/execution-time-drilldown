@@ -1,4 +1,4 @@
-package info.bluefloyd.profiler.spring.tests;
+package info.bluefloyd.profiler.test.spring;
 
 import info.bluefloyd.profiler.ProfilingMethodInterceptor;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * Created by laci on 9/18/2014.
  */
 @Configuration
-@ComponentScan("info.bluefloyd.profiler.spring.tests")
+@ComponentScan("info.bluefloyd.profiler.test.spring")
 public class SpringConfiguration {
 
     @Bean
