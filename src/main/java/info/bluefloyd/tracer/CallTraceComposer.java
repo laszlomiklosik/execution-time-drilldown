@@ -1,16 +1,10 @@
 package info.bluefloyd.tracer;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/**
- * Created by laci on 9/18/2014.
- */
 public class CallTraceComposer {
 
     public List<CallTraceElement> getCallTrace() {
